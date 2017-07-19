@@ -1,0 +1,3 @@
+# Rails Portfolio Project
+
+Content and project coming soon...
