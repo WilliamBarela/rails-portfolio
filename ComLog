@@ -1,0 +1,14 @@
+# generating Reader resource
++crce@vrli:~/code/labs/rails-portfolio$ rails g resource Reader username:string email:string password_digest:string picture_url:string location:string --no-test-framework --no-assets
+Running via Spring preloader in process 24032
+      invoke  active_record
+      create    db/migrate/20170822195752_create_readers.rb
+      create    app/models/reader.rb
+      invoke  controller
+      create    app/controllers/readers_controller.rb
+      invoke    erb
+      create      app/views/readers
+      invoke    helper
+      create      app/helpers/readers_helper.rb
+      invoke  resource_route
+       route    resources :readers
