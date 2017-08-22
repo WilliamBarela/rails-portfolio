@@ -12,3 +12,18 @@ Running via Spring preloader in process 24032
       create      app/helpers/readers_helper.rb
       invoke  resource_route
        route    resources :readers
+
+
++crce@vrli:~/code/labs/rails-portfolio$ rails g resource Book title:string author:string year:integer language:string --no-test-framework --no-assets
+Running via Spring preloader in process 24152
+      invoke  active_record
+      create    db/migrate/20170822200228_create_books.rb
+      create    app/models/book.rb
+      invoke  controller
+      create    app/controllers/books_controller.rb
+      invoke    erb
+      create      app/views/books
+      invoke    helper
+      create      app/helpers/books_helper.rb
+      invoke  resource_route
+       route    resources :books
