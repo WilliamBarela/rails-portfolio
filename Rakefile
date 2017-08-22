@@ -4,3 +4,9 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+desc "starts console"
+task :console do
+  Pry.start
+end
+
