@@ -13,7 +13,7 @@ Running via Spring preloader in process 24032
       invoke  resource_route
        route    resources :readers
 
-
+# generating Book resource
 +crce@vrli:~/code/labs/rails-portfolio$ rails g resource Book title:string author:string year:integer language:string --no-test-framework --no-assets
 Running via Spring preloader in process 24152
       invoke  active_record
@@ -27,3 +27,18 @@ Running via Spring preloader in process 24152
       create      app/helpers/books_helper.rb
       invoke  resource_route
        route    resources :books
+
+# generating Vocabulary resource
+:crce@vrli:~/code/labs/rails-portfolio$ rails g resource Vocabulary word:string grammatical_classification:string example:text definition:text --no-test-framework --no-assets
+Running via Spring preloader in process 24983
+      invoke  active_record
+      create    db/migrate/20170822201411_create_vocabularies.rb
+      create    app/models/vocabulary.rb
+      invoke  controller
+      create    app/controllers/vocabularies_controller.rb
+      invoke    erb
+      create      app/views/vocabularies
+      invoke    helper
+      create      app/helpers/vocabularies_helper.rb
+      invoke  resource_route
+       route    resources :vocabularies
