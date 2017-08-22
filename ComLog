@@ -42,3 +42,14 @@ Running via Spring preloader in process 24983
       create      app/helpers/vocabularies_helper.rb
       invoke  resource_route
        route    resources :vocabularies
+
+
+# changing profile_url type to text since string is only for 256 characters or less (which might be too few for a url)
++crce@vrli:~/code/labs/rails-portfolio$ rails g migration remove_profile_url_from_readers profile_url:string
+Running via Spring preloader in process 25334
+      invoke  active_record
+      create    db/migrate/20170822202347_remove_profile_url_from_readers.rb
++crce@vrli:~/code/labs/rails-portfolio$ rails g migration add_profile_url_to_readers profile_url:text
+Running via Spring preloader in process 25349
+      invoke  active_record
+      create    db/migrate/20170822202430_add_profile_url_to_readers.rb
